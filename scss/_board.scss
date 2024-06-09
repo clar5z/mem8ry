@@ -1,8 +1,5 @@
 body {
-    display: grid;
-    align-items: center;
-    grid: 90% 10% / 1fr;
-    min-height: 96vh;
+    min-height: 100vh;
     padding: 20px;
     background: rgb(17, 6, 45);
     background: linear-gradient(38deg, $dark 0%, $color 100%);
