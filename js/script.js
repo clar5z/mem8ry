@@ -96,7 +96,7 @@ function checkWin() {
     if ([...cards].every((card) => card.classList.contains("inactive"))) {
         audio.win.play();
         clearInterval(stopTime);
-        salveTime();
+        saveTime();
         setTimeout(() => {
             winBtn.classList.add("active");
             document.body.style.overflow = "hidden";
@@ -104,7 +104,7 @@ function checkWin() {
     }
 }
 
-function salveTime() {
+function saveTime() {
     clocks.forEach((clock) => {
         let myRecord = "99:99";
 
