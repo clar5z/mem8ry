@@ -35,7 +35,7 @@ function loadRecord() {
 
 function playMusic() {
     audio.bg.loop = true;
-    //audio.bg.play();
+    audio.bg.play();
 }
 
 function mixCards() {
