@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mem8ry | Memory Game | 8Bits, NES, Games</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" href="favicon.png" />
+        <meta name="description" content="A memory game developed by Clarisse Ribeiro" />
+        <meta property="og:title" content="Mem8ry | Memory Game | 8Bits, NES, Games" />
+        <meta property="og:description" content="A memory game developed by Clarisse Ribeiro" />
+        <meta property="og:image" content="img/mem8ry.png" />
+    </head>
+
+    <body>
+        <main>
+            <div class="menu">
+                <div>
+                    <span class="record">99:99</span>
+                </div>
+                <div>
+                    <h1>Mem8ry</h1>
+                </div>
+                <div>
+                    <span class="time">00:00</span>
+                    <button class="restart"><img src="img/restart.png" alt="Restart" /></button>
+                    <button id="mute"><img src="img/play.png" alt="Mute" /></button>
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="card" data-carta="ballon-fight" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/balloon-fight.png" alt="Ballon Fight" />
+                </div>
+                <div class="card" data-carta="ballon-fight" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/balloon-fight.png" alt="Ballon Fight" />
+                </div>
+                <div class="card" data-carta="bomberman" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/bomberman.png" alt="Bomberman" />
+                </div>
+                <div class="card" data-carta="bomberman" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/bomberman.png" alt="Bomberman" />
+                </div>
+                <div class="card" data-carta="castlevania" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/castlevania.png" alt="Castlevania" />
+                </div>
+                <div class="card" data-carta="castlevania" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/castlevania.png" alt="Castlevania" />
+                </div>
+                <div class="card" data-carta="contra" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/contra.png" alt="Contra" />
+                </div>
+                <div class="card" data-carta="contra" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/contra.png" alt="Contra" />
+                </div>
+                <div class="card" data-carta="donkey-kong" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/donkey-kong.png" alt="Donkey Kong" />
+                </div>
+                <div class="card" data-carta="donkey-kong" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/donkey-kong.png" alt="Donkey Kong" />
+                </div>
+                <div class="card" data-carta="elevator-action" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/elevator-action.png" alt="Elevator Action" />
+                </div>
+                <div class="card" data-carta="elevator-action" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/elevator-action.png" alt="Elevator Action" />
+                </div>
+                <div class="card" data-carta="mega-man" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/mega-man.png" alt="Mega Man" />
+                </div>
+                <div class="card" data-carta="mega-man" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/mega-man.png" alt="Mega Man" />
+                </div>
+                <div class="card" data-carta="pac-man" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/pac-man.png" alt="Pac Man" />
+                </div>
+                <div class="card" data-carta="pac-man" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/pac-man.png" alt="Pac Man" />
+                </div>
+                <div class="card" data-carta="pony-cat" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/pony-cat.png" alt="Pony Cat" />
+                </div>
+                <div class="card" data-carta="pony-cat" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/pony-cat.png" alt="Pony Cat" />
+                </div>
+                <div class="card" data-carta="super-mario-3" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/super-mario-3.png" alt="Super Mario 3" />
+                </div>
+                <div class="card" data-carta="super-mario-3" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/super-mario-3.png" alt="Super Mario 3" />
+                </div>
+                <div class="card" data-carta="super-mario" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/super-mario.png" alt="Super Mario" />
+                </div>
+                <div class="card" data-carta="super-mario" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/super-mario.png" alt="Super Mario" />
+                </div>
+                <div class="card" data-carta="tetris" data-number="1">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/tetris.png" alt="Tetris" />
+                </div>
+                <div class="card" data-carta="tetris" data-number="2">
+                    <img class="front" src="img/card.png" alt="Card" />
+                    <img class="back" src="img/tetris.png" alt="Tetris" />
+                </div>
+            </div>
+        </main>
+        <div id="win">
+            <div>
+                <h2>You Win!</h2>
+                <p>Your time: <span class="time">00:00</span></p>
+                <p>Your best time: <span class="record">99:99</span></p>
+                <button class="restart"><img src="img/restart.png" alt="Restart" /></button>
+            </div>
+        </div>
+        <footer>
+            <small>Developed by <a href="https://clar5z.github.io/" target="_blank">Clarisse Ribeiro</a></small>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

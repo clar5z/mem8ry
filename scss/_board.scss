@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    align-items: center;
+    grid: 90% 10% / 1fr;
+    min-height: 96vh;
+    padding: 20px;
+    background: rgb(17, 6, 45);
+    background: linear-gradient(38deg, $dark 0%, $color 100%);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    @include x-mobile {
+        flex-direction: row;
+    }
+    div:last-child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.board {
+    display: grid;
+    grid: 1fr / repeat(4, 1fr);
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+    perspective: 2000px;
+    .card {
+        position: relative;
+        transition: transform 0.3s;
+        transform-style: preserve-3d;
+        .font,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+        .back {
+            transform: rotateY(180deg);
+        }
+        &.inactive {
+            animation: inactive 0.3s ease-in forwards;
+            visibility: hidden;
+            cursor: default;
+        }
+    }
+    @include tablet {
+        grid: 1fr / repeat(6, 1fr);
+        max-width: 900px;
+    }
+}
+
+footer {
+    align-self: end;
+    padding-top: 20px;
+}
