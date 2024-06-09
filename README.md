@@ -10,11 +10,11 @@ Um jogo simples de memória com temática do NES, pelo qual sou apaixonada. Foi 
 
 ## Informações adicionais:
 
--   O jogo é responsivo;
--   O código é mobile first;
--   Conta com timer, tempo record, botão de reset, botão de mute/play;
--   Foi desenvolvido em inglês;
--   Durante o desenvolvimento foram utilizados: Gulp, Sass, Autoprefixer, Prettier, Sourcemaps, Postcss, BrowserSync e Git;
+-   O jogo é responsivo
+-   O código é mobile first
+-   Conta com timer, tempo record, botão de reset, botão de mute/play
+-   Foi desenvolvido em inglês
+-   Durante o desenvolvimento foram utilizados: Gulp, Sass, Autoprefixer, Prettier, Sourcemaps, Postcss, BrowserSync e Git
 
 ## Jogue agora:
 
