@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+a {
+    color: $light;
+    &:hover {
+        color: $medium;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    overlay: none;
+    img {
+        width: 20px;
+        min-width: 18px;
+    }
+}
+
+@keyframes inactive {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

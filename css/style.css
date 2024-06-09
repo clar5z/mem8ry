@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+body {
+  color: #fffefd;
+  font-family: "Tiny5", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+small {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+a {
+  color: #fffefd;
+}
+a:hover {
+  color: #ddd;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  overlay: none;
+}
+button img {
+  width: 20px;
+  min-width: 18px;
+}
+
+@keyframes inactive {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  display: grid;
+  align-items: center;
+  grid: 90% 10%/1fr;
+  min-height: 96vh;
+  padding: 20px;
+  background: rgb(17, 6, 45);
+  background: linear-gradient(38deg, #11062d 0%, #380550 100%);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+@media (min-width: 370px) {
+  .menu {
+    flex-direction: row;
+  }
+}
+.menu div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.board {
+  display: grid;
+  grid: 1fr/repeat(4, 1fr);
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+  perspective: 2000px;
+}
+.board .card {
+  position: relative;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+.board .card .font,
+.board .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.board .card .back {
+  transform: rotateY(180deg);
+}
+.board .card.inactive {
+  animation: inactive 0.3s ease-in forwards;
+  visibility: hidden;
+  cursor: default;
+}
+@media (min-width: 650px) {
+  .board {
+    grid: 1fr/repeat(6, 1fr);
+    max-width: 900px;
+  }
+}
+
+footer {
+  align-self: end;
+  padding-top: 20px;
+}
+
+#win {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+#win.active {
+  display: flex;
+}
+#win div {
+  width: 70%;
+  padding: 50px 20px;
+  background-color: #11062d;
+  border-radius: 15px;
+}
+@media (min-width: 650px) {
+  #win div {
+    width: auto;
+    padding: 50px 110px;
+  }
+}
+#win .restart {
+  margin-top: 20px;
+}
+#win .restart img {
+  width: 40px;
+}
+/*# sourceMappingURL=style.css.map */
