@@ -40,7 +40,10 @@ function playMusic() {
 
 function mixCards() {
     const cardsArray = Array.from(board.children);
-    cardsArray.sort(() => Math.random() - 0.5);
+    for (let i = cardsArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cardsArray[i], cardsArray[j]] = [cardsArray[j], cardsArray[i]];
+    }
     board.innerHTML = "";
     cardsArray.forEach((card) => board.appendChild(card));
 }
